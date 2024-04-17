@@ -1,0 +1,324 @@
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+
+}
+::-webkit-scrollbar-track{
+    border-radius: 20px;
+    background: rgb(225,255,255);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ff8733;
+    border-radius: 0%20px;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.563) inset;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+    
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+    /* border: 2px white solid; */
+    .home-nav{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 20px;
+        /* position: fixed; */
+        top: 0;
+        animation: slide 3s ease-out;
+        z-index: 1;
+        a{
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 1.5rem;
+
+        }
+       
+        a:hover{
+            /* text-decoration: none; */
+            color:orange;
+            /* font-size: 1.5rem; */
+            /* padding-top: 5px; */
+
+        }
+        button{
+            font-family: "Bebas Neue", sans-serif;
+            height: 30px;
+            width: 150px;
+            /* position: relative; */
+            /* bottom: 5px; */
+            font-size: 1rem;
+            /* border: none; */
+        }
+        button:hover{
+            background-color: white;
+            transform: translate(-3px ,);
+        }
+         a:nth-child(2){
+            color: orange;
+        }
+    }
+    .home-content{
+        margin: 50px 0px 0px 190px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+       
+        .home-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    }
+    h1{
+        font-size: 3rem;
+        margin: 0;
+
+    }
+    h3{
+        font-size: 3rem;
+        animation: slide1 2s linear reverse 5s ;
+    }
+
+    h3:hover{
+        color: orange;
+
+    }
+    img{
+        animation: slide 4s linear;
+    }
+   
+
+
+}
+@keyframes slide {
+    from{
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes slide1 {
+    from{
+        transform: translateX(500PX);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+.about{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    .about-content{
+        height: 250px;
+        width: 50%;
+
+    }
+    h3{
+        height: 300px;
+        width: 500px;
+        position: relative;
+        top: 50px;
+        font-size: 1.5vw;
+        text-align: center;
+    }
+}
+.skills{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card{
+    height: 500px;
+    width: 300px;
+    /* background-color: orange; */
+    outline: 2px white solid;
+    border-radius: 10%;
+}
+.card:nth-child(1){
+    position: absolute;
+    top: 1355px;
+    left: 95px;
+
+}
+.card:nth-child(2){
+    position: absolute;
+    top: 1355px;
+    left: 455px;
+
+}
+.card:nth-child(3){
+    position: absolute;
+    top: 1355px;
+    left: 811px;
+
+}
+.card:nth-child(4){
+    position: absolute;
+    top: 1900px;
+    left: 156px;
+
+}
+.card:nth-child(5){
+    position: absolute;
+    top: 1900px;
+    left: 564px;
+
+}
+
+.card svg{
+    background-color: orange;
+    border-radius: 50%;
+    margin: 10px 0px 0px 10px ;
+
+}
+
+hr{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border: none;
+
+}
+h5{
+    margin: auto;
+    font-size: 15px;
+    font-weight: 500;
+    width: 95%;
+    text-align: justify;
+    line-height: 30px;
+
+
+}
+.card:hover{
+    background-color: orange;
+    transition: all 1s ease-in;
+    outline: none;
+    transform: scale(1.1);
+}
+svg{
+    
+    border: 2px black solid;
+    outline: white solid;
+    outline-offset: 2px;
+    border-radius: 50%;
+    transform: rotate(360deg);
+    
+
+}
+.project{
+    
+        height: 350vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:30px;
+        button{
+            height: 30px;
+            width: 100px;
+            color: red;
+            margin-left: 20px;
+            font-family: fantasy;
+        }
+    
+
+}
+.card1{
+    height: 500px;
+    width: 300px;
+    /* background-color: orange; */
+    outline: 2px white solid;
+    border-radius: 10%;
+   
+
+}
+.card1:hover{
+    background-color: orange;
+    transition: all 1s ease-in;
+    outline: none;
+    transform: scale(1.1);
+}
+.cont{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+   
+
+   
+}
+.mithu{
+    height: 700px;
+    width: 500px;
+    /* border: 1px red solid; */
+    background-color: rgb(147, 97, 6);
+    justify-content: center;
+    align-items: column;
+    /* display: flex; */
+}
+.photo{
+    height: 250px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    /* display: flex; */
+    position: relative;
+    top: 20px;
+    left:120px;
+    
+}
+.details{
+    height: 500px;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    /* display: flex; */
+    position: relative;
+    top: 10px;
+    left: 120px; 
+    
+
+
+}
+.profile img{
+    height: 30px;
+    width: 30px;
+}
+.mypic{
+    height: 300px;
+    width: 300px;
+}
+
+
+
